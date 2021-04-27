@@ -1,0 +1,381 @@
+/* @import the google fonts should go here */
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-size: 15px;
+  font-weight: 600;
+  font-family: manrope;
+  box-sizing: border-box;
+  position: relative;
+  overflow-x: hidden;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+}
+.container-1 {
+  width: 100%;
+  /* 750px for mobile */
+  height: 500px;
+  background: linear-gradient(
+    to bottom,
+    hsl(226, 100%, 87%),
+    hsl(230, 100%, 99%)
+  );
+  z-index: inherit;
+  margin-bottom: 0;
+}
+.container {
+  width: 50vw;
+  overflow-x: hidden;
+  margin-top: 20px;
+  background-color: hsl(230, 100%, 99%);
+  border: 1px solid black transparent;
+  border-radius: 10px;
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, 0%);
+}
+.list,
+li {
+  list-style-type: none;
+}
+.trial-button {
+  background-color: hsl(227, 35%, 25%);
+  padding: 10px;
+  border: 1px solid black transparent;
+  border-radius: 20px;
+  color: hsl(230, 100%, 99%);
+  padding: 5px 35px;
+  border: none;
+}
+
+/* Now let’s see some common breakpoints for widths of devices:
+
+320px — 480px: Mobile devices
+481px — 768px: iPads, Tablets
+769px — 1024px: Small screens, laptops
+1025px — 1200px: Desktops, large screens
+1201px and more —  Extra large screens, TV */
+/* @media screen and: This is used when we're targeting the screens. */
+
+@media (max-device-width: 320px) {
+  body {
+    width: 375px;
+    font-size: 15px;
+    font-weight: 600;
+    font-family: manrope;
+    box-sizing: border-box;
+    position: relative;
+    overflow-x: hidden;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+  }
+  .container-1 {
+    width: 750px;
+    /* 750px for mobile */
+    height: 500px;
+    background: linear-gradient(
+      to bottom,
+      hsl(226, 100%, 87%),
+      hsl(230, 100%, 99%)
+    );
+    z-index: inherit;
+    margin-bottom: 0;
+  }
+  .container {
+    background-color: hsl(230, 100%, 99%);
+    height: 30.375rem;
+    border: 1px solid black transparent;
+    border-radius: 10px;
+    width: 250px;
+    padding: 5px;
+    /* overflow-x: hidden; */
+    margin-top: 20px;
+    position: absolute;
+    top: 30%;
+    left: 100%;
+    transform: translate(-50%, 0%);
+  }
+  h3 {
+    font-size: 15px;
+    font-weight: 800;
+  }
+  .trial-button {
+    background-color: hsl(227, 35%, 25%);
+    padding: 10px;
+    border: 1px solid black transparent;
+    border-radius: 20px;
+    color: hsl(230, 100%, 99%);
+    padding: 5px 35px;
+    border: none;
+  }
+}
+
+/* No need for min-width here but oyu can add it just in case */
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+  body {
+    width: 375px;
+    font-size: 15px;
+    font-weight: 600;
+    font-family: manrope;
+    box-sizing: border-box;
+    position: relative;
+    overflow-x: hidden;
+    justify-content: left;
+    text-align: left;
+    align-items: left;
+    
+  }
+  .container-1 {
+    width: 750px;
+    height: 500px;
+    background: linear-gradient(
+      to bottom,
+      hsl(226, 100%, 87%),
+      hsl(230, 100%, 99%)
+    );
+    z-index: inherit;
+    margin-bottom: 0;
+  }
+  .container {
+    background-color: hsl(230, 100%, 99%);
+    max-height: 30.375rem;
+    /* margin-right: 20px; */
+    border: 1px solid black transparent;
+    border-radius: 10px;
+    max-width: 19.675rem;
+    position: absolute;
+    top: 30%;
+    left: 100%;
+    transform: translate(-50%, 0%);
+  }
+  h3 {
+    font-size: 15px;
+    font-weight: 800;
+  }
+  .trial-button {
+    background-color: hsl(227, 35%, 25%);
+    padding: 10px;
+    border: 1px solid black transparent;
+    border-radius: 20px;
+    color: hsl(230, 100%, 99%);
+    padding: 5px 35px;
+    border: none;
+  }
+}
+/* No need for min-wisth here cos the max-width 768px will override the former one */
+@media (max-width: 768px) {
+  body {
+    max-width: 375px;
+    font-size: 15px;
+    font-weight: 600;
+    font-family: manrope;
+    box-sizing: border-box;
+    position: relative;
+    overflow-x: hidden;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    
+  }
+  .container-1 {
+    width: 750px;
+    height: 500px;
+    background: linear-gradient(to bottom, hsl(226, 100%, 87%), hsl(230, 100%, 99%));
+    z-index: inherit;
+    margin-bottom: 0;
+    padding: 20px; 
+    /* margin-right: 60px; */
+    justify-content: left !important;
+  }
+  .container {
+    background-color: hsl(230, 100%, 99%);
+    max-height: 30.375rem;
+    border: 1px solid black transparent;
+    border-radius: 10px;
+    max-width: 19.65rem;
+    position: absolute;
+    top: 30%;
+    left: 80%;
+    transform: translate(-50%, 0%);
+  }
+  h3 {
+    font-size: 20px;
+    /* text-align: left; */
+    /* margin: 0 auto; */
+    margin-right: 50px;
+    font-weight: 800;
+  }
+  .paragraph{
+    margin-right: 40px;
+  }
+  .trial-button {
+    background-color: hsl(227, 35%, 25%);
+    padding: 10px;
+    border: 1px solid black transparent;
+    border-radius: 20px;
+    color: hsl(230, 100%, 99%);
+    padding: 5px 35px;
+    border: none;
+  }
+}
+
+/* /* iPads (portrait and landscape) ----------- */
+@media (max-device-width: 992px) {
+  body {
+    max-width: 375px;
+    font-size: 15px;
+    font-weight: 600;
+    font-family: manrope;
+    box-sizing: border-box;
+    position: relative;
+    overflow-x: hidden;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+  }
+  .container-1 {
+    width: 750px;
+    /* 750px for mobile */
+    height: 500px;
+    background: linear-gradient(
+      to bottom,
+      hsl(226, 100%, 87%),
+      hsl(230, 100%, 99%)
+    );
+    z-index: inherit;
+    margin-bottom: 0;
+  }
+  .container {
+    background-color: hsl(230, 100%, 99%);
+    height: 30.375rem;
+    border: 1px solid black transparent;
+    border-radius: 10px;
+    width: 19.675rem;
+    position: absolute;
+    top: 30%;
+    left: 100%;
+    transform: translate(-50%, 0%);
+  }
+  h3 {
+    font-size: 15px;
+    font-weight: 800;
+  }
+  .trial-button {
+    background-color: hsl(227, 35%, 25%);
+    padding: 10px;
+    border: 1px solid black transparent;
+    border-radius: 20px;
+    color: hsl(230, 100%, 99%);
+    padding: 5px 35px;
+    border: none;
+  }
+}
+
+/* Desktops and laptops ----------- */
+@media (max-device-width: 1200px) {
+  body {
+    width: 375px;
+    font-size: 15px;
+    font-weight: 600;
+    font-family: manrope;
+    box-sizing: border-box;
+    position: relative;
+    overflow-x: hidden;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+  }
+  .container-1 {
+    width: 750px;
+    /* 750px for mobile */
+    height: 500px;
+    background: linear-gradient(
+      to bottom,
+      hsl(226, 100%, 87%),
+      hsl(230, 100%, 99%)
+    );
+    z-index: inherit;
+    margin-bottom: 0;
+  }
+  .container {
+    background-color: hsl(230, 100%, 99%);
+    height: 30.375rem;
+    border: 1px solid black transparent;
+    border-radius: 10px;
+    width: 19.675rem;
+    position: absolute;
+    top: 30%;
+    left: 100%;
+    transform: translate(-50%, 0%);
+  }
+  h3 {
+    font-size: 15px;
+    font-weight: 800;
+  }
+  .trial-button {
+    background-color: hsl(227, 35%, 25%);
+    padding: 10px;
+    border: 1px solid black transparent;
+    border-radius: 20px;
+    color: hsl(230, 100%, 99%);
+    padding: 5px 35px;
+    border: none;
+  }
+}
+
+@media (min-device-width: 1400px) {
+body {
+  font-size: 15px;
+  font-weight: 600;
+  font-family: manrope;
+  box-sizing: border-box;
+  position: relative;
+  overflow-x: hidden;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+}
+.container-1 {
+  width: 100%;
+  /* 750px for mobile */
+  height: 500px;
+  background: linear-gradient(
+    to bottom,
+    hsl(226, 100%, 87%),
+    hsl(230, 100%, 99%)
+  );
+  z-index: inherit;
+  margin-bottom: 0;
+}
+.container {
+  width: 50vw;
+  overflow-x: hidden;
+  margin-top: 20px;
+  background-color: hsl(230, 100%, 99%);
+  border: 1px solid black transparent;
+  border-radius: 10px;
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, 0%);
+}
+.list,
+li {
+  list-style-type: none;
+}
+.trial-button {
+  background-color: hsl(227, 35%, 25%);
+  padding: 10px;
+  border: 1px solid black transparent;
+  border-radius: 20px;
+  color: hsl(230, 100%, 99%);
+  padding: 5px 35px;
+  border: none;
+}
+
